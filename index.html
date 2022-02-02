@@ -6,5 +6,26 @@
   </head>
   <body>
     <h1>Harrison Loh ITMD-361 Lab 4</h1>
+    <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" autocomplete="on" enctype="multipart/form-data">
+      <h2>Volunteer Form</h2>
+      <fieldset>
+        <legend>My Info</legend>
+        <label>First Name: <input type="text" name="first_name_field" placeholder="first name"></label>
+        <label>Last Name: <input type="text" name="last_name_field" placeholder="last name"></label>
+        <label>Phone Number: <input type="text" name="phone_field" placeholder="Phone Number"></label>
+        <label>Email Address: <input type="email" name="email_field" placeholder="email here"></label>
+        <label >Gender: <label>Male: <input type="radio" name="gender_field" value="m"></label></label>
+        <label>Female: <input type="radio" name="gender_field" value="f"></label>
+        <label for="ageSelection">Age: </label>
+        <select name="menu_field--------" id="ageSelection">
+          <option value="u18">Under 18</option>
+          <option value="G">Green</option>
+          <option value="B">Blue</option>
+          <option value="P">Pink</option>
+        </select>
+      </fieldset>
+      <input type="hidden" name="hidden_field" value="hloh">
+      <input type="submit" value="Send Me">
+    </form>
   </body>
 </html>
