@@ -14,8 +14,12 @@
         <label>Last Name: <input type="text" name="last_name_field" placeholder="last name"></label>
         <label>Phone Number: <input type="text" name="phone_field" placeholder="Phone Number"></label>
         <label>Email Address: <input type="email" name="email_field" placeholder="email here"></label>
-        <label >Gender: <label>Male: <input type="radio" name="gender_field" value="m"></label></label>
-        <label>Female: <input type="radio" name="gender_field" value="f"></label>
+        <fieldset>
+          <legend>Gender: </legend>
+          <label>Male: <input type="radio" name="gender_field" value="m"></label></label>
+          <label>Female: <input type="radio" name="gender_field" value="f"></label>
+        </fieldset>
+        
         <label for="ageSelection">Age: </label>
         <select name="age_field" id="ageSelection">
           <option value="u18">Under 18</option>
@@ -29,14 +33,17 @@
       </fieldset>
       <fieldset>
         <legend>My Availibility</legend>
-        <label for="checkBox"></label>
-        <label>Sunday: <input type="checkbox" name="available_field[]" value="sun"></label>
-        <label>Monday: <input type="checkbox" name="available_field[]" value="mon" ></label>
-        <label>Tuesday: <input type="checkbox" name="available_field[]" value="tue"></label>
-        <label>Wednesday: <input type="checkbox" name="available_field[]" value="wed"></label>
-        <label>Thursday: <input type="checkbox" name="available_field[]" value="thu"></label>
-        <label>Friday: <input type="checkbox" name="available_field[]" value="fri"></label>
-        <label>Saturday: <input type="checkbox" name="available_field[]" value="sat"></label>
+        <fieldset>
+          <legend>Days Available: </legend>
+          <label>Sunday: <input type="checkbox" name="available_field[]" value="sun"></label>
+          <label>Monday: <input type="checkbox" name="available_field[]" value="mon" ></label>
+          <label>Tuesday: <input type="checkbox" name="available_field[]" value="tue"></label>
+          <label>Wednesday: <input type="checkbox" name="available_field[]" value="wed"></label>
+          <label>Thursday: <input type="checkbox" name="available_field[]" value="thu"></label>
+          <label>Friday: <input type="checkbox" name="available_field[]" value="fri"></label>
+          <label>Saturday: <input type="checkbox" name="available_field[]" value="sat"></label>
+        </fieldset>
+        
         <label for="our_textarea">Comments:</label>
         <textarea cols="30" rows="10" name="comments_field" placeholder="Comments" id="our_textarea"></textarea>
       </fieldset>
