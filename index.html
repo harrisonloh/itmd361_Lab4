@@ -17,13 +17,30 @@
         <label >Gender: <label>Male: <input type="radio" name="gender_field" value="m"></label></label>
         <label>Female: <input type="radio" name="gender_field" value="f"></label>
         <label for="ageSelection">Age: </label>
-        <select name="menu_field--------" id="ageSelection">
+        <select name="age_field" id="ageSelection">
           <option value="u18">Under 18</option>
-          <option value="G">Green</option>
-          <option value="B">Blue</option>
-          <option value="P">Pink</option>
+          <option value="18-24">18-24</option>
+          <option value="25-34">25-34</option>
+          <option value="35-44">35-44</option>
+          <option value="45-54">45-54</option>
+          <option value="55-64">55-64</option>
+          <option value="65+">65 and over</option>
         </select>
       </fieldset>
+      <fieldset>
+        <legend>My Availibility</legend>
+        <label for="checkBox"></label>
+        <label>Sunday: <input type="checkbox" name="available_field[]" value="sun"></label>
+        <label>Monday: <input type="checkbox" name="available_field[]" value="mon" ></label>
+        <label>Tuesday: <input type="checkbox" name="available_field[]" value="tue"></label>
+        <label>Wednesday: <input type="checkbox" name="available_field[]" value="wed"></label>
+        <label>Thursday: <input type="checkbox" name="available_field[]" value="thu"></label>
+        <label>Friday: <input type="checkbox" name="available_field[]" value="fri"></label>
+        <label>Saturday: <input type="checkbox" name="available_field[]" value="sat"></label>
+        <label for="our_textarea">Comments:</label>
+        <textarea cols="30" rows="10" name="comments_field" placeholder="Comments" id="our_textarea"></textarea>
+      </fieldset>
+
       <input type="hidden" name="hidden_field" value="hloh">
       <input type="submit" value="Send Me">
     </form>
